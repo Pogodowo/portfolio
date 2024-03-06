@@ -12,9 +12,11 @@ rec.innerHTML=`
                     "f f f f f f f f f f t t"
                     "d d d d d d d d d d k k"
                     "d d d d d d d d d d k k"
+                    "g g l l l l l l l l k k"
+
                     ;
 
-                    height: 550px;
+                    height: 590px;
                     width: 900px;
                     background-color: #faf7f0; 
                     border-radius:25px;
@@ -57,6 +59,14 @@ rec.innerHTML=`
         color: black;
     }
 
+#receptura-git-link{grid-area: g ;
+
+
+    height :50px;
+    padding: 20px;
+
+    }
+
         a {
             text-decoration: none;
             
@@ -81,6 +91,8 @@ rec.innerHTML=`
 #js-img{width: 40px;
 } 
 #react-img{width: 40px;}
+#github-img {width: 40px;
+}
 </style>
 
 
@@ -89,7 +101,7 @@ rec.innerHTML=`
 
 <h3 id='receptura-name'>Twoja Receptura</h3>
 <p id='description'>Przedstawiam aplikację Twoja-receptura. Jest to prosty kalkulator webowy 
-służący  przeprowadzaniu obliczeń ilości poszczególnych składników w lekach recepturowych.
+służący do  przeprowadzania obliczeń ilości poszczególnych składników w lekach recepturowych.
 Został stworzony w celu zwiększenia komfortu codziennej pracy farmaceutów. Po rozpoczęciu nowej receptury
 w aplikacji dodajemy kolejno składniki tak jak zapisano je na recepcie wraz z parametrami uwzględnionymi w wyświetlonym formularzu.
 Program na bieżąco dokonuje obliczeń.
@@ -101,6 +113,7 @@ Zapraszam do zapoznania się.
 <img id='receptura-img'/>
 <div id='technologies'><img id='python-img'/><img id='django-img'/><img id='js-img'/></div> 
 <a id='receptura-link' target="_blank" href="https://twoja-receptura.pl"> Zobacz sam</a>
+<a id='receptura-git-link' target="_blank" href="https://github.com/Pogodowo/Monorec"  ><img id='github-img'/></a>
 </div>`
 
 class Receptura extends HTMLElement{
@@ -112,6 +125,7 @@ class Receptura extends HTMLElement{
     this.shadowRoot.querySelector('#django-img').src=`${this.getAttribute('django')}`;
     this.shadowRoot.querySelector('#python-img').src=`${this.getAttribute('python')}`;
     this.shadowRoot.querySelector('#js-img').src=`${this.getAttribute('js')}`;
+    this.shadowRoot.querySelector('#github-img').src=`${this.getAttribute('github')}`;
     }
 }
 
