@@ -63,7 +63,7 @@ personal_data.innerHTML=`
 }                      
 #kontakt-envelope{width: 70px;
 } 
-#django-img {width: 40px;
+#django-img {width: 50px;
 } 
 #links{display: flex;
         flex-direction:column;
@@ -72,11 +72,11 @@ personal_data.innerHTML=`
     }
 #linkedin-img {width: 50px}
 #github-img {width: 50px}
-#python-img{width: 40px;
+#python-img{width: 50px;
 } 
-#js-img{width: 40px;
+#js-img{width: 50px;
 } 
-#react-img{width: 40px;}
+#react-img{width: 50px;}
 
 
 </style>
@@ -84,7 +84,7 @@ personal_data.innerHTML=`
 <div class="description-card">
 
 <h3 id='description-name'></h3>
-<p id='description'> Cześć! Nazywam się Łukasz i jestem entuzjastą programowania. Podczas rozwijania mojej pasji staram się tworzyć projekty ułątwiające
+<p id='description'> Cześć! Nazywam się Łukasz i jestem entuzjastą programowania. Podczas rozwijania mojej pasji staram się tworzyć projekty ułatwiające
 realizację różnych zadań życia codziennego, będące jednocześnie  intuicyjnymi w  użytkowaniu.
 Moje prace są to najczęściej aplikacje webowe oparte na języku Python z użyciem Django z frontendem napisanym w JavScript i CSS.
 Cały czas rozwijam umiejętności i szukam inspiracji do nowych projektów.

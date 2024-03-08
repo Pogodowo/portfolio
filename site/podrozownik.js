@@ -12,9 +12,10 @@ pod.innerHTML=`
                     "f f f f f f f f f f t t"
                     "d d d d d d d d d d k k"
                     "d d d d d d d d d d k k"
+                    "g g o o o o o o o o k k"
                     ;
 
-                    height: 550px;
+                    height: 620px;
                     width: 900px;
                     background-color: #faf7f0;
                     border-radius:25px;
@@ -44,7 +45,7 @@ pod.innerHTML=`
     width:700px;
     border-top: 1px solid #d9d3d2;}
 
-#receptura-link{grid-area: k ;
+#podrozownik-link{grid-area: k ;
 
         width: 100%;
         display:flex;
@@ -72,7 +73,13 @@ pod.innerHTML=`
     padding: 12px;
     border-top: 1px solid #d9d3d2;
 }
+#podrozownik-git-link{grid-area: g ;
 
+
+    height :10px;
+    margin: 30px;
+
+    }
 
 #django-img {width: 30px;
 }
@@ -82,6 +89,7 @@ pod.innerHTML=`
 }
 #react-img{width: 30px;}
 #docker-img{width: 30px;}
+#github-img {width: 40px;}
 </style>
 
 
@@ -100,7 +108,8 @@ profilu wysokościowego trasy oraz kolekcji zdjęć z przebiegu wyvieczki
 
 <img id='podrozownik-img'/>
 <div id='technologies'><img id='python-img'/><img id='django-img'/><img id='js-img'/><img id='docker-img'/></div>
-<a id='receptura-link' target="_blank" href="https://vagabond-hand-production.up.railway.app/"> Zobacz sam</a>
+<a id='podrozownik-link' target="_blank" href="https://vagabond-hand-production.up.railway.app/"> Zobacz sam</a>
+<a id='podrozownik-git-link' target="_blank" href="https://github.com/Pogodowo/geoproject"  ><img id='github-img'/></a>
 </div>`
 
 class Podrozownik extends HTMLElement{
@@ -113,6 +122,8 @@ class Podrozownik extends HTMLElement{
     this.shadowRoot.querySelector('#python-img').src=`${this.getAttribute('python')}`;
     this.shadowRoot.querySelector('#js-img').src=`${this.getAttribute('js')}`;
      this.shadowRoot.querySelector('#docker-img').src=`${this.getAttribute('docker')}`;
+     this.shadowRoot.querySelector('#github-img').src=`${this.getAttribute('github')}`;
+
     }
 }
 

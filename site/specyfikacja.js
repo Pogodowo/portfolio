@@ -12,6 +12,7 @@ spec.innerHTML=`
                     "f f f f f f f f f f t t"
                     "d d d d d d d d d d k k"
                     "d d d d d d d d d d k k"
+                    "g g h h h h h h h h k k"
                     ;
 
                     height: 550px;
@@ -44,7 +45,7 @@ spec.innerHTML=`
     width:700px;
     border-top: 1px solid #d9d3d2;} 
 
-#receptura-link{grid-area: k ;
+#specyfikacja-link{grid-area: k ;
         
         width: 100%;
         display:flex;
@@ -72,7 +73,14 @@ spec.innerHTML=`
     padding: 12px;
     border-top: 1px solid #d9d3d2;
 }                      
+#specyfikacja-git-link{grid-area: g ;
 
+
+
+    height :50px;
+    margin: 20px 0px 0px 20px;
+
+    }
 
 #django-img {width: 40px;
 } 
@@ -81,6 +89,8 @@ spec.innerHTML=`
 #js-img{width: 40px;
 } 
 #react-img{width: 40px;}
+#github-img {width: 40px;
+}
 </style>
 
 
@@ -96,7 +106,8 @@ Projekt generuje kwoty słowne i ma możliwośc zapisania specyfikacji w formaci
 
 <img id='specyfikacja-img'/>
 <div id='technologies'><img id='python-img'/><img id='django-img'/><img id='js-img'/></div> 
-<a id='receptura-link' target="_blank" href="https://twoja-receptura.pl"> Zobacz sam</a>
+<a id='specyfikacja-link' target="_blank" href="https://twoja-receptura.pl"> Zobacz sam</a>
+<a id='specyfikacja-git-link' target="_blank" href="https://github.com/Pogodowo/cash_specification"  ><img id='github-img'/></a>
 </div>`
 
 class Specyfikacja extends HTMLElement{
@@ -108,6 +119,7 @@ class Specyfikacja extends HTMLElement{
     this.shadowRoot.querySelector('#django-img').src=`${this.getAttribute('django')}`;
     this.shadowRoot.querySelector('#python-img').src=`${this.getAttribute('python')}`;
     this.shadowRoot.querySelector('#js-img').src=`${this.getAttribute('js')}`;
+    this.shadowRoot.querySelector('#github-img').src=`${this.getAttribute('github')}`;
     
     }
 }

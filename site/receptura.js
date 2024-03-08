@@ -16,7 +16,7 @@ rec.innerHTML=`
 
                     ;
 
-                    height: 590px;
+                    height: 610px;
                     width: 900px;
                     background-color: #faf7f0; 
                     border-radius:25px;
@@ -63,7 +63,7 @@ rec.innerHTML=`
 
 
     height :50px;
-    padding: 20px;
+    margin: 20px;
 
     }
 
