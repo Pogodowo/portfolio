@@ -29,7 +29,7 @@ personal_data.innerHTML=`
                   
                 }  
 #description-img{grid-area:f;
-                height: 250px;
+                height: 182px;
                 
                 border-radius: 0px 25px 0px 0px;
 
@@ -63,7 +63,7 @@ personal_data.innerHTML=`
 }                      
 #kontakt-envelope{width: 70px;
 } 
-#django-img {width: 50px;
+#django-img {width: 60px;
 } 
 #links{display: flex;
         flex-direction:column;
@@ -71,12 +71,12 @@ personal_data.innerHTML=`
         justify-content: space-evenly;
     }
 #linkedin-img {width: 50px}
-#github-img {width: 50px}
-#python-img{width: 50px;
+#github-img {width: 60px}
+#python-img{width: 60px;
 } 
-#js-img{width: 50px;
+#js-img{width: 60px;
 } 
-#react-img{width: 50px;}
+#react-img{width: 60px;}
 
 
 </style>

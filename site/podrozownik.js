@@ -76,7 +76,7 @@ pod.innerHTML=`
 #podrozownik-git-link{grid-area: g ;
 
 
-    height :10px;
+
     margin: 30px;
 
     }
@@ -101,7 +101,7 @@ pod.innerHTML=`
 można tworzyć własną kolekcję tras gpx. Podróżownik znajdzie  zastosowanie u miłośników podróży rowerowych, samochodowych i nie tylko.
  Ślady wyświetlane sa na mapie. Każdej trasie można przypisać dowolnie
 wybrany kolor. Projekt ma szeroki potencjał rozwoju. W przyszłości planuję dodać funkcjonalność wyświetlania
-profilu wysokościowego trasy oraz kolekcji zdjęć z przebiegu wyvieczki
+profilu wysokościowego trasy oraz kolekcji zdjęć z przebiegu wycieczki
  </p>
 
 
